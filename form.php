@@ -1,11 +1,6 @@
-<!DOCTYPE html>
-<html lang >
-    <head>
-        <title>Class Form</title>
-        <link rel="stylesheet" href="css/mystyle.css">
-    </head>
-
-    <body>
+<?php
+require('header.php');
+?>
         <h1>Please enter user data </h1>
         <form>
             <label for="fname" value="name">First Name</label>
@@ -19,7 +14,13 @@
                     <option id="female">Female</option>
                     <option id="male">Male</option>
                 </select>
-            <button type="submit">Submit</button>
+            <label for="county">Select your county</label>
+                <select id="county">
+                    <option id="kiambu">Kiambu</option>
+                    <option id="nairobi">Nairobi</option>
+                    <option id="kisumu">Kisumu</option>
+                    <option id="kajiado">Kajiado</option>
+                </select>
+            <button type="submit" name="save">Submit</button>
 
         </form>
-    </body>
